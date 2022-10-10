@@ -1,0 +1,191 @@
+// Hero section
+.hero-section {
+    &.inner-hero {
+        position: relative;
+    }    
+    .hero-slider {
+        .slick-dots {
+            li {
+                button {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    .hero-slide {
+        .container {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            z-index: 1;
+            .row {
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        p {
+            font-size: 24px;
+            letter-spacing: .9px;
+            &.news-hero-title {
+                font-size: 42px;
+                font-weight: $font-extra-bold;
+                letter-spacing: 1.05px;
+            }
+        }
+        img {
+            width: 100%;
+            max-height: 900px;
+            object-fit: cover;
+        }
+        &.without-image {
+            min-height: 430px;
+        }
+    }
+    .hero-number {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .container {
+            transform: none;
+        }
+        div[class*=col] {
+            border-right: 4px solid $white;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        .number {
+            font-size: 80px;
+            letter-spacing: 4.17px;
+        }
+    }
+}
+
+// Responsive style
+@media screen and (max-width: $tablet) {
+
+    .hero-section {
+        .hero-slide {
+            height: 100vh;
+            max-height: 778px;
+            img {
+                height: 100vh;
+                max-height: 778px;
+            }
+            .container {
+                .row {
+                    div[class*='col'] {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-top: 115px;
+                    }
+                }
+            }
+            p {
+                font-size: 20px;
+                letter-spacing: .75px;
+            }
+            &.without-image {
+                min-height: 200px;
+                height: auto;
+                max-height: none;
+                margin-top: 50px;
+                    h1.hero-title {
+                        font-size: 32px;
+                        letter-spacing: .88px;
+                    }
+            }
+        }
+        &.inner-hero {
+            .hero-slide {
+                .container {
+                    .row {
+                        div[class*=col] {
+                            padding-top: 0;
+                            justify-content: center;
+                            padding-bottom: 120px;
+                        }
+                    }
+                }
+            }
+            .hero-number {
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+        .btn {
+            margin-top: auto;
+            margin-bottom: 63px;
+            &.btn-lg {
+                min-width: 270px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    .hero-section {
+        &.inner-hero {
+            .hero-slide {
+                .container {
+                    .row {
+                        div[class*=col] {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+                p.news-hero-title {
+                    font-size: 30px;
+                    line-height: 42px;
+                    letter-spacing: .42px;
+                }
+            }
+            .hero-number {
+                position: relative;
+                padding: 0;
+                .number {
+                    font-size: 120px;
+                }
+                .container {
+                    .row {
+                        div[class*=col] {
+                            padding: 30px 0;
+                            border-right: none;
+                            position: relative;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                width: 137px;
+                                height: 4px;
+                                background: $white;
+                                left: 50%;
+                                bottom: -4px;
+                                transform: translateX(-50%);
+                            }
+                            &:last-child {
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                h4 {
+                    font-weight: $font-semibold;
+                }
+            }
+        }
+    }
+    
+}

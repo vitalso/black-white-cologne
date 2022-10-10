@@ -1,0 +1,237 @@
+﻿doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.p-0
+				.hero-slider.mb-0
+					.hero-slide.with-overlay
+						img(src="images/hero-slide-1.png", alt="hero-slide")
+						.container
+							.row
+								.col-xl-6.offset-xl-3.text-center
+									h1.hero-title.text-white Willkommen im Klub
+									p.text-white.mb-5.pb-xl-5 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+									a(href="#").btn.btn-lg.btn-light
+										|Unsere Sportangebote
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+					.hero-slide.with-overlay
+						img(src="images/hero-slide-1.png", alt="hero-slide")
+						.container
+							.row
+								.col-xl-6.offset-xl-3.text-center
+									h1.hero-title.text-white Andre slide
+									p.text-white.mb-5.pb-5 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+									a(href="#").btn.btn-lg.btn-light Unsere Sportangebote
+
+			// News section
+			section.news
+				.container
+					.row.align-items-center
+						.col-md-7.offset-xl-1.text-center.text-md-start
+							h2 News
+							p Alle Neuigkeiten aus dem Klub
+						.col-md-4
+							.text-end
+								a(href="#").btn.btn-dark.text-start.d-none.d-md-inline-block
+									|Alle News
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+						include partials/news-section.pug
+
+			section
+				.container-fluid.mb-md-5.px-0
+					.row.m-0
+						.col-md-4.px-0
+							.category-item.with-overlay.overflow-hidden.ms-0
+								img(src="images/hockey.png", alt="hockey-category").cover-img
+								.category-item-desc.flex-column
+									.category-item-icon: a(href="#"): img(src="images/hockey-icon.svg", alt="category-icon")
+									h3: a(href="#").text-white.text-decoration-none Hockey
+						
+						.col-md-4.px-0
+							.category-item.with-overlay.overflow-hidden
+								img(src="images/tennis.png", alt="tennis-category").cover-img
+								.category-item-desc.flex-column
+									.category-item-icon: a(href="#"): img(src="images/tennis-icon.svg", alt="category-icon")
+									h3: a(href="#").text-white.text-decoration-none Tennis
+
+						.col-md-4.px-0
+							.category-item.with-overlay.overflow-hidden.me-0
+								img(src="images/lacrosse.png", alt="lacrosse-category").cover-img
+								.category-item-desc.flex-column
+									.category-item-icon: a(href="#"): img(src="images/lacrosse-icon.svg", alt="category-icon")
+									h3: a(href="#").text-white.text-decoration-none Lacrosse
+			
+			// Propose section
+			section.propose.pt-0.pt-md-5
+				.container
+					.row
+						.col-xl-10.offset-xl-1.text-center.text-md-start
+							h2 Herzlich willkommen
+							p bei Schwarz-Weiß Köln
+
+						.col-12.mt-5.position-relative
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/for-kids.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Schwarz Weiß
+									h2: a(href="#").text-decoration-none.text-white Angebote für Kinder 
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+							.pattern-image: img(src="images/pattern.svg", alt="pattern-image")
+
+						.col-md-6.mt-4
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/gastronomie.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Schwarz Weiß
+									h2: a(href="#").text-decoration-none.text-white Gastronomie
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+						.col-md-6.mt-4
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/training.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Athletik
+									h2: a(href="#").text-decoration-none.text-white Trainingsgelände
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+			section.club.with-overlay
+				.container.position-relative
+					.row
+						.col-xl-5.offset-xl-1.text-center.text-md-start
+							h2 Dein Familien Klub im Kölner Norden 
+							p Genügend Raum Marcus et Cornelia in horto ambulant.
+
+						.col-12.mt-2.mt-md-5.position-relative
+							.bg-dark.d-flex.align-items-center.justfify-content-between
+								.description.offset-xl-1
+									p.mb-0.ps-4.ps-xl-0.d-none.d-lg-block.text-white Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+
+								.club-number
+									.number-item.text-center
+										.number.text-white 2
+										b.text-white Hockey <br> Kunstrasenplätze
+
+									.number-item.text-center
+										.number.text-white 20
+										b.text-white Tennis <br> Plätze
+
+									.number-item.text-center
+										.number.text-white 2
+										b.text-white Hallen für Hockey <br> und Tennis
+
+									.number-item.text-center
+										.number.text-white 1
+										b.text-white Athlethik Bereich <br> Indoor & Outdoor
+
+							.pattern-image.overflow-hidden: img(src="images/pattern.svg", alt="pattern-image").d-none.d-md-block
+
+			section
+				.container
+					.row
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#assignment")
+								h6.text-center Dokumente & Downloads
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Aktuelle Corana-Regeln für den Trainingsbetrieb 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Hallenregeln Lorem ipsum
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Übersicht Mitglieder Beiträge
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#schedule")
+								h6.text-center Trainingszeiten
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Neu: Hockey Hallen-Trainingszeiten 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Tennis Trainingszeiten
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Lacrosse Trainingszeiten
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Hockey
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Tennis
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Lacrosse
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

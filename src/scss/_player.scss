@@ -1,0 +1,52 @@
+// Player item
+.player-item {
+    max-width: 304px;
+    max-height: 371px;
+    min-height: 371px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 16px 60px 16px;
+    background: url(../images/player-pattern.svg) no-repeat;
+    &.with-overlay {
+        &:after {
+            background-color: rgba(0, 0, 0, .08);
+            background-image: none;
+        }
+    }
+    &-info {
+        padding: 1px 15px;
+        left: 16px;
+        right: 16px;
+        bottom: 18px;
+        z-index: 1;
+        span {
+            max-width: 100px;
+            font-size: 18px;
+            font-weight: $font-extra-bold;
+            line-height: 1.11;
+            letter-spacing: 0.68px;
+        }
+    }
+    &-number {
+        font-family: $font-Monoton;
+        font-size: 50px;
+        letter-spacing: 1.88px;
+    }
+    .type-of-player {
+        background: rgba(0, 0, 0, .77);
+        font-size: 26px;
+        font-weight: $font-extra-bold;
+        letter-spacing: 0.98px;
+        z-index: 1;
+    }
+}
+
+// Responsive style
+@media screen and (max-width: $mobile) {
+
+    .player-item {
+        margin-bottom: 20px;
+    }
+    
+}

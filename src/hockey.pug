@@ -1,0 +1,328 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'hockey';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/hero-hockey.png", alt="hero-slide")
+					.container
+						.row
+							.col-xl-6.offset-xl-3.text-center
+								h1.hero-title.text-white Hockey
+								p.text-white.mb-5.pb-xl-5 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+				.hero-number.bg-dark
+					.container.h-auto.position-relative.start-0
+						.row.h-auto.flex-row
+							.col-md-4.text-center
+								.number.text-white 2
+								h4.text-white Kunstrasenplätze
+
+							.col-md-4.text-center
+								.number.text-white 1
+								h4.text-white Hockeyhalle
+
+							.col-md-4.text-center
+								.number.text-white 26
+								h4.text-white Jugendmannschaften
+
+			// News section
+			section.news
+				.container
+					.row.align-items-center
+						.col-md-7.offset-xl-1.text-center.text-md-start
+							h2 News
+							p Alle Hockey Neuigkeiten aus dem Klub
+						.col-md-4
+							.text-end
+								a(href="#").btn.btn-dark.text-start.d-none.d-md-inline-block
+									|Alle Hockey News
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+						
+						include partials/news-section.pug
+			
+			// Propose section
+			section.propose.pt-0.pt-md-5
+				.container
+					.row
+						.col-xl-10.offset-xl-1.text-center.text-md-start
+							h2 Jugendbereich
+							p bei Schwarz-Weiß Köln
+
+						.col-12.mt-5.position-relative
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/for-kids.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Schwarz Weiß
+									h2: a(href="#").text-decoration-none.text-white Angebote für Kinder 
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+							.pattern-image: img(src="images/pattern.svg", alt="pattern-image").d-none.d-md-block
+
+			section.pt-0.pt-md-5
+				.container
+					.row.align-items-center
+						.col-md-7.offset-xl-1.text-center.text-md-start
+							h2 Terminübersicht
+							p Alle Hockeyevents im Überblick
+						.col-md-4
+							.text-end
+								a(href="#").btn.btn-dark.text-start.d-none.d-md-inline-block
+									|mehr
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+					.row.mt-3.mt-md-5
+						.col-lg-8.offset-lg-2.position-relative
+							.table-data.bg-white
+								.table-header.bg-dark.text-white.d-none.d-md-block
+									.table-row.d-flex
+										.table-col.w-50.text-uppercase Mannschaft
+										.table-col.w-50.text-uppercase Spielpläne
+								.table-content
+									.table-row.d-flex.border-bottom
+										.table-col.w-50
+											strong
+												|1. Damenmannschaft
+												span.d-block.d-md-none Mittelrheinliga
+										.table-col.w-50
+											svg
+												use(xlink:href="images/sprite.svg#icon-table-hockey")
+											a(href="#") Spielplan ansehen 
+
+									.table-row.d-flex.border-bottom
+										.table-col.w-50
+											strong
+												|1. Herrenmannschaft
+												span.d-block.d-md-none Mittelrheinliga
+										.table-col.w-50
+											svg
+												use(xlink:href="images/sprite.svg#icon-table-hockey")
+											a(href="#") Spielplan ansehen 
+
+									.table-row.d-flex.border-bottom
+										.table-col.w-50
+											strong
+												|Knaben A
+												span.d-block.d-md-none Jugendliga B
+										.table-col.w-50
+											svg
+												use(xlink:href="images/sprite.svg#icon-table-hockey")
+											a(href="#") Spielplan ansehen 
+
+									.table-row.d-flex.border-bottom
+										.table-col.w-50: strong Jugendtraining
+										.table-col.w-50
+											svg.opacity
+												use(xlink:href="images/sprite.svg#icon-table-hockey")
+											a(href="#") Traningsplan ansehen
+
+							.pattern-image: img(src="images/pattern.svg", alt="pattern-image").d-none.d-md-block
+
+					.text-center.mt-5
+						a(href="#").btn.btn-dark.text-start.d-inline-block.d-md-none
+							|Alle anzeigen
+							svg
+								use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+			// Our team
+			section.news.pt-0.pt-md-5
+				.container
+					.row.align-items-center
+						.col-md-7.offset-xl-1.text-center.text-md-start
+							h2 Unsere Mannschaften
+							p Überblick unserer Hockeymannschaften
+						.col-md-4
+							.text-end
+								a(href="#").btn.btn-dark.text-start.d-none.d-md-inline-block
+									|mehr
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+						.col-12.position-relative
+							.news-slider
+								.news-item.card.d-block.border-0.mt-0.mt-md-5.mb-4.mb-md-0.with-overlay.overflow-hidden.rounded-0.p-0
+									img(src="images/our-team.png", alt="image")
+									a(href="#").news-item-tag
+										svg
+											use(xlink:href="images/sprite.svg#icon-h")
+									.news-item-desc
+										h4: a(href="#").text-decoration-none 1. Damenmannschaft 
+										a(href="#").btn.btn-light.btn-sm.text-start
+											|Mehr
+											svg
+												use(xlink:href="images/sprite.svg#arrow-right-black")
+
+								.news-item.card.d-block.border-0.mt-0.mt-md-5.mb-4.mb-md-0.with-overlay.overflow-hidden.rounded-0.p-0
+									img(src="images/our-team.png", alt="image")
+									a(href="#").news-item-tag
+										svg
+											use(xlink:href="images/sprite.svg#icon-h")
+									.news-item-desc
+										h4: a(href="#").text-decoration-none 1. Herrenmannschaft
+										a(href="#").btn.btn-light.btn-sm.text-start
+											|Mehr
+											svg
+												use(xlink:href="images/sprite.svg#arrow-right-black")
+
+								.news-item.card.d-block.border-0.mt-0.mt-md-5.mb-4.mb-md-0.with-overlay.overflow-hidden.rounded-0.p-0
+									img(src="images/for-kids-2.png", alt="image")
+									a(href="#").news-item-tag
+										svg
+											use(xlink:href="images/sprite.svg#icon-h")
+									.news-item-desc
+										h4: a(href="#").text-decoration-none Knaben A
+										a(href="#").btn.btn-light.btn-sm.text-start
+											|Mehr
+											svg
+												use(xlink:href="images/sprite.svg#arrow-right-black")
+
+								.news-item.card.d-block.border-0.mt-0.mt-md-5.mb-4.mb-md-0.with-overlay.overflow-hidden.rounded-0.p-0
+									img(src="images/news-1.png", alt="image")
+									a(href="#").news-item-tag
+										svg
+											use(xlink:href="images/sprite.svg#icon-h")
+									.news-item-desc
+										h4: a(href="#").text-decoration-none Jugendtraining
+										a(href="#").btn.btn-light.btn-sm.text-start
+											|Mehr
+											svg
+												use(xlink:href="images/sprite.svg#arrow-right-black")
+
+							.text-center.mt-5
+								a(href="#").btn.btn-dark.text-start.d-inline-block.d-md-none
+									|mehr
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+							.pattern-image: img(src="images/pattern.svg", alt="pattern-image")
+
+			// FAQ
+			section.propose.py-0.py-md-5
+				.container
+					.row
+						.col-xl-10.offset-xl-1.text-center.text-md-start
+							h2 Hockey FAQ
+							p Alle Fragen rund um Hockey im KKHT
+
+					.row
+						.col-xl-10.offset-xl-1
+							#accordionFlushExample.accordion.accordion-flush
+								.accordion-item.px-0
+									h2#flush-headingOne.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+								
+								.accordion-item.px-0
+									h2#flush-headingTwo.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Placeholder content for this accordion, which is intended to demonstrate the 
+											code .accordion-flush
+											|  class. This is the second item&apos;s accordion body. Let&apos;s imagine this being filled with some actual content.
+								
+								.accordion-item.px-0
+									h2#flush-headingThree.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+
+								.accordion-item.px-0
+									h2#flush-headingFour.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+			
+			section
+				.container
+					.row
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#assignment")
+								h6.text-center Dokumente & Downloads
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Aktuelle Corana-Regeln für den Trainingsbetrieb 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Hallenregeln Lorem ipsum
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Übersicht Mitglieder Beiträge
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#schedule")
+								h6.text-center Trainingszeiten
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Neu: Hockey Hallen-Trainingszeiten 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Tennis Trainingszeiten
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Lacrosse Trainingszeiten
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner
+								.card-content
+									<strong>Thomas Quinders</strong> <br> Kuhweg 20 • 50735 Köln <br> Telefon: +49.221.9762210 <br> Telefax: +49.221.9762212 <br> E-Mail: <a href="mailto: buero@kkht.de" class="text-dark text-decoration-none border-bottom">buero(at)kkht.de</a>
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

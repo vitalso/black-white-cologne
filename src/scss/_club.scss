@@ -1,0 +1,90 @@
+// Club section
+.club {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: url(../images/club.png) center top/cover no-repeat;
+    &.with-overlay {
+        &:after {
+            opacity: 1;
+            background-color: rgba(255, 255, 255, .68);
+            background-image: none;
+        }
+    }
+    .container {
+        z-index: 1;
+    }
+
+    .bg-dark {
+        padding-top: 41px;
+        padding-bottom: 48px;
+        background: rgba(0, 0, 0, .9);
+        p {
+            line-height: 1.75;
+            letter-spacing: 0.6px;
+            font-size: 16px;
+        }
+        .description {
+            max-width: 300px;
+        }
+    }
+    .pattern-image {
+        height: 160px;
+        top: auto;
+        bottom: -15px;
+    }
+}
+
+.club-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.number-item {
+    max-width: 198px;
+    flex-basis: calc(100% / 4);
+    b {
+        font-weight: $font-semibold;
+    }
+}
+
+    .number {
+        font-family: $font-Monoton;
+        font-size: 120px;
+        letter-spacing: 4.5px;
+    }
+
+// Responsive style
+@media screen and (max-width: $tablet) {
+
+    .club {
+        padding-top: 0;
+        background: transparent;
+    }
+    
+}
+
+@media screen and (max-width: $mobile) {
+
+    .club {
+        padding-bottom: 0;
+    }
+
+    .club-number {
+        flex-wrap: wrap;
+    }
+
+        .number-item {
+            max-width: 50%;
+            flex-basis: 50%;
+            margin-bottom: 40px;
+            &:nth-child(3) , &:nth-child(4) {
+                margin-bottom: 0;
+            }
+            .number {
+                font-size: 80px;
+            }
+        }
+    
+}

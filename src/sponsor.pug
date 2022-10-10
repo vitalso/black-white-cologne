@@ -1,0 +1,108 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'club';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/news-hero.png", alt="hero-slide")
+					.container
+						.row
+							.col-xl-6.offset-xl-3.text-center
+								h1.hero-title.text-white Sponsoren
+
+			section.pb-5.pb-sm-0
+				.container
+					.row.align-items-center.mb-5.pb-lg-5.pb-0
+						.col-xl-11.offset-xl-1
+							h2.text-center.text-md-start Marcus et Cornelia in horto
+							p Der KKHT Schwarz-Weiß ist stolz darauf, eine Vielzahl namhafter Sponsoren an seiner Seite zu wissen. Wenn auch Sie als Sponsor den KKHT unterstützen möchten, dann lassen Sie uns bitte eine Information per Telefon (+49.221.9762210) oder per Email zukommen. Eine Übersicht über die wichtigsten Möglichkeiten eines Sponsorings haben wir unten für Sie bereitgestellt.
+
+			section.pt-0.pt-md-5
+				.container
+					.row
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/ETL_logo.png", alt="sponsor-image")
+
+						.col-lg-3.col-sm-6
+							.sponsor-card.bg-grey.d-flex.justify-content-center.align-items-center
+								img(src="images/sponsor/deltax-logo.svg", alt="sponsor-image")
+
+			section.pt-0.pt-md-5
+				.container
+					.row.align-items-center.flex-column-reverse.flex-md-row
+						.col-xl-4.col-md-6.offset-xl-1
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner
+								.offset-md-1.mt-3.mt-lg-5
+									p.fs-15.mb-2: b Georgs Gastro
+									p.fs-15.mb-2 Kuhweg 20 • 50735 Köln
+									p.fs-15.mb-2 +49 221 9762210
+									p.fs-15.mb-2: a(href="mailto: hallo@gastro-schwarz-weiß.de").text-dark hallo@gastro-schwarz-weiß.de
+
+						.col-xl-5.col-md-6.offset-xl-1
+							h4 Sponsoring Infos
+							.accordion.accordion-flush.mx-0.mb-5.mb-md-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Mediadaten 2022
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

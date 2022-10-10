@@ -1,0 +1,564 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'hockey';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/training-hero.png", alt="hero-slide")
+					.container
+						.row
+							.col-xl-6.offset-xl-3.text-center
+								h1.hero-title.text-white Trainingspläne
+
+			section.pb-5.pb-sm-0
+				.container
+					.row.align-items-center.mb-5.pb-0.pb-md-5
+						.col-xl-11.offset-xl-1.text-center.text-md-start
+							h2 Saison 2021/22 
+							p Marcus et Cornlia in horto ambulant. Subito <br> Cornelia clamat: Serpens in horto!
+
+					h4.fs-3.mb-3.mb-md-5.position-relative
+						span.d-none.d-sm-block Trainingszeiten Mädchen
+						button(data-bs-toggle="collapse" data-bs-target="#plane-1" aria-expanded="false" aria-controls="plane-1").bg-transparent.d-inline-block.d-sm-none.btn-collapse Trainingszeiten Mädchen
+							svg
+								use(xlink:href="images/sprite.svg#arrow-right-black")
+
+					#plane-1.row.mb-5.collapse.d-sm-flex
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Bambinis
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mädchen U8
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mädchen U10
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Weibliche U12
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Weibliche U14
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Weibliche U16
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Weibliche U18
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+					hr.bg-dark.d-block.d-sm-none.collapse-line
+
+					h4.fs-3.mb-3.mb-md-5.position-relative
+						span.d-none.d-sm-block Trainingszeiten Jungs
+						button(data-bs-toggle="collapse" data-bs-target="#plane-2" aria-expanded="false" aria-controls="plane-2").bg-transparent.d-inline-block.d-sm-none.btn-collapse Trainingszeiten Jungs
+							svg
+								use(xlink:href="images/sprite.svg#arrow-right-black")
+
+					#plane-2.row.mb-5.collapse.d-sm-flex
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Bambinis
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Knaben D 
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Knaben C
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Knaben B
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Knaben A
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Männliche Jugend B
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Männliche Jugend A
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+					hr.bg-dark.d-block.d-sm-none.collapse-line
+
+					h4.fs-3.mb-3.mb-md-5.position-relative
+						span.d-none.d-sm-block Trainingszeiten Erwachsene
+						button(data-bs-toggle="collapse" data-bs-target="#plane-3" aria-expanded="false" aria-controls="plane-3").bg-transparent.d-inline-block.d-sm-none.btn-collapse Trainingszeiten Erwachsene
+							svg
+								use(xlink:href="images/sprite.svg#arrow-right-black")
+
+					#plane-3.row.mb-5.collapse.d-sm-flex
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 1
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 2
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 3
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 4
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 5
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 6
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 7
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+
+						.col-lg-3.col-sm-6
+							.team-item.plane-item.position-relative
+								.team-item-desc.bg-grey
+									.team-item-title.bg-dark.text-white.position-relative.mt-0.top-0.start-0 Mannschaft 8
+									p.mt-2.ps-3 Jhg. 2013/14
+									ul.mb-0.ps-0
+										li
+											strong.d-block Mo
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Di / Athlethik
+											|16:00 - 18:00 Uhr
+
+										li
+											strong.d-block Mi
+											|16:00 - 18:00 Uhr
+			
+			// FAQ
+			section.propose.py-0.py-md-5
+				.container
+					.row
+						.col-xl-10.offset-xl-1.text-center.text-md-start
+							h2 FAQ
+							p Alle Fragen im KKHT
+
+					.row
+						.col-xl-10.offset-xl-1
+							#accordionFlushExample.accordion.accordion-flush
+								.accordion-item.px-0
+									h2#flush-headingOne.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+								
+								.accordion-item.px-0
+									h2#flush-headingTwo.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Placeholder content for this accordion, which is intended to demonstrate the 
+											code .accordion-flush
+											|  class. This is the second item&apos;s accordion body. Let&apos;s imagine this being filled with some actual content.
+								
+								.accordion-item.px-0
+									h2#flush-headingThree.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+
+								.accordion-item.px-0
+									h2#flush-headingFour.accordion-header
+										button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor?
+									#flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+										.accordion-body.px-0
+											| Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officiis. Facere dolore facilis velit, nihil architecto nisi nulla cupiditate nostrum mollitia sint assumenda ex tempora minus quos eius quisquam incidunt!
+			
+			section
+				.container
+					.row
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#assignment")
+								h6.text-center Dokumente & Downloads
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Aktuelle Corana-Regeln für den Trainingsbetrieb 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Hallenregeln Lorem ipsum
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Übersicht Mitglieder Beiträge
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#schedule")
+								h6.text-center Trainingszeiten
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Neu: Hockey Hallen-Trainingszeiten 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Tennis Trainingszeiten
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Lacrosse Trainingszeiten
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner
+								.card-content
+									<strong>Thomas Quinders</strong> <br> Kuhweg 20 • 50735 Köln <br> Telefon: +49.221.9762210 <br> Telefax: +49.221.9762212 <br> E-Mail: <a href="mailto: buero@kkht.de" class="text-dark text-decoration-none border-bottom">buero(at)kkht.de</a>
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

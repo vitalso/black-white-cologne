@@ -1,0 +1,79 @@
+header
+	.container
+		.row
+			.col-xl-10.offset-xl-1
+				.top-bar-nav.text-end.d-none.d-lg-block
+					a(href="#") Trainingszeiten
+					a(href="#") Kontakt
+
+				nav.navbar.navbar-expand-lg.p-0
+
+					button(type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.ms-auto
+						span
+						span
+						span
+
+					.logo
+						a(href="index.html"): img(src="images/logo.png", alt="logo")
+					
+					#nav.collapse.navbar-collapse
+						ul.navbar-nav.align-items-lg-center.justify-content-between.w-100
+							li.nav-item.mb-0
+								a(href="#" , role="button" data-bs-toggle="dropdown" aria-expanded="false" , class=(name_page === "hockey" ? "active" : undefined)).nav-link.text-uppercase
+									|Hockey
+									svg.d-inline-block.d-lg-none
+										use(xlink:href="images/sprite.svg#arrow-down")
+								
+								// Default dropdown menu
+								ul.dropdown-menu.rounded-0.border-0
+									li: a(href="hockey-herren.html").dropdown-item Hockeyherren
+									li: a(href="hockey.html").dropdown-item Hockeydamen
+									li: a(href="hockeycamp.html").dropdown-item Hockeyjugend
+									li: a(href="trainingsplane.html").dropdown-item Trainingspläne
+									li: a(href="#").dropdown-item Ansprechpartner
+									li: a(href="#").dropdown-item FAQ
+
+							li.nav-item.mb-0
+								a(href="tennis.html" , class=(name_page === "tennis" ? "active" : undefined)).nav-link.text-uppercase Tennis
+
+							li.nav-item.mb-0
+								a(href="#").nav-link.text-uppercase Lacrosse
+
+							li.nav-item.mb-0
+								a(href="#").nav-link.text-uppercase Kids & Family
+
+							li.nav-item.mb-0
+								a(href="#" , role="button" data-bs-toggle="dropdown" aria-expanded="false" , class=(name_page === "news" ? "active" : undefined)).nav-link.text-uppercase
+									|Klub
+									svg.d-inline-block.d-lg-none
+										use(xlink:href="images/sprite.svg#arrow-down")
+
+								// Default dropdown menu
+								ul.dropdown-menu.rounded-0.border-0
+									li: a(href="news.html").dropdown-item News
+									li: a(href="downloads.html").dropdown-item Downloads
+									li: a(href="gastronomie.html").dropdown-item Gastronmie
+									li: a(href="#").dropdown-item Trainingsgelände
+									li: a(href="vorstand.html").dropdown-item Vorstand
+									li: a(href="sponsor.html").dropdown-item Sponsoren
+									li: a(href="history.html").dropdown-item Historie
+									li: a(href="#").dropdown-item Büro
+									li: a(href="#").dropdown-item Newsletter
+
+							li.nav-item.mb-0.d-block.d-lg-none
+								a(href="#").nav-link.text-uppercase Trainingszeiten
+
+							li.nav-item.mb-0.d-block.d-lg-none
+								a(href="#").nav-link.text-uppercase Kontakt
+							
+							li.nav-item.mb-0.d-none.d-lg-block
+								a(href="#").social-link
+									svg
+										use(xlink:href="images/sprite.svg#facebook")
+
+								a(href="#").social-link
+									svg
+										use(xlink:href="images/sprite.svg#instagram")
+
+						p.d-block.d-lg-none.text-white.text-center.mb-0.header-copyright © Schwarz-Weiß Köln 2022
+				

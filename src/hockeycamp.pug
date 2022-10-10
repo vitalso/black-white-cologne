@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'hockey';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/camp-hero.png", alt="hero-slide")
+					.container
+						.row
+							.col-xl-6.offset-xl-3.text-center
+								h1.hero-title.text-white Pfingst Hockeycamp
+
+			section.pb-5.pb-sm-0
+				.container
+					.row.align-items-center.mb-5.pb-lg-5.pb-0
+						.col-xl-11.offset-xl-1
+							h2.text-center.text-md-start Marcus et Cornelia in horto
+							p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.
+							
+					.row.py-3.py-lg-5.align-items-center
+						.col-lg-6.col-md-10.offset-md-1.offset-lg-0
+							.news-detail-slider.mt-0
+								div: img(src="images/camp-image.png", alt="camp-slider")
+								div: img(src="images/camp-image.png", alt="camp-slider")
+								div: img(src="images/camp-image.png", alt="camp-slider")
+
+						.col-xl-4.col-lg-6.offset-lg-0.offset-xl-1
+							.news-detail
+								h4 Das Camp im Überblick
+								p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+								p.mb-0: b Datum
+								p 01.01.2023
+								p.mb-0: b Uhrzeit
+								p.mb-0 8:00 – 16:00 Uhr (mit Frühstück)
+								p 9:30 – 16:00 Uhr (ohne Frühstück)
+								p.mb-0: b Kosten
+								p 169 EUR
+								.d-block.d-lg-none
+									p.mb-0: b Ansprechpartner
+									p.mb-0 Susanne Musterfrau
+									p: a(href="mailto: musterfrau@schwarz-weiß.koeln").text-dark musterfrau@schwarz-weiß.koeln
+
+								a(href="#").btn.btn-dark.text-start.d-none.d-lg-inline-block
+									|Jetzt anmelden
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+			section.pt-0.pt-md-5.pb-0
+				.container
+					.row.mb-5.pb-lg-5.pb-0
+						.col-xl-11.offset-xl-1.text-center.text-md-start
+							h4 Anmeldung & Ablauf
+
+						.col-lg-5.offset-xl-1
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Anmeldung Hockeycamp 2023
+								
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Zeitplan und Ansprechpartner
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

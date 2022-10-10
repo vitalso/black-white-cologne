@@ -1,0 +1,166 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'news';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/news-hero.png", alt="hero-slide")
+					.container
+						.row.justify-content-end
+							.col-xl-8.offset-xl-2.text-center
+								p.news-hero-title.text-white.mb-5.pb-xl-5 Lorem ipsum dolor sit amet, quod consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+
+			// News section
+			section.news-detail
+				.container
+					.row
+						.col-xl-6.offset-xl-3
+							p.news-date.text-uppercase: i Köln, 11.11.2021
+
+							p: b Lorem ipsum dolor sit amet
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+							p Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+							p Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+
+					.row
+						.col-xl-8.offset-xl-2
+							.news-detail-slider
+								div: img(src="images/news-detail.png", alt="news-image")
+								div: img(src="images/news-detail.png", alt="news-image")
+								div: img(src="images/news-detail.png", alt="news-image")
+
+					.row.mt-5
+						.col-xl-6.offset-xl-3
+							p: b Lorem ipsum dolor sit amet
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+							
+					.row.mt-5.align-items-center
+						.col-xl-3.col-md-4.offset-xl-3.offset-md-1.text-center.mb-3.mb-md-0
+							img(src="images/news-vertical-image.png", alt="news-image")
+						.col-xl-3.col-md-6
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+
+					.row.mt-5
+						.col-xl-6.offset-xl-3
+							p: b Lorem ipsum dolor sit amet
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+							p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+
+					.row.mt-5
+						.col-xl-6.offset-xl-3
+							hr.news-line
+							.row
+								.col-6
+									p.news-share-title
+										strong News teilen <img src="images/share-icon.svg" alt="share-icon" class="ms-2">
+								
+								.col-6
+									.news-share.d-flex.justify-content-end
+										a(href="#")
+											svg
+												use(xlink:href="images/sprite.svg#instagram-dark")
+										
+										a(href="#")
+											svg
+												use(xlink:href="images/sprite.svg#twitter-dark")
+
+										a(href="#")
+											svg
+												use(xlink:href="images/sprite.svg#facebook-dark")
+
+			// News section
+			section.news
+				.container
+					.row.align-items-center
+						.col-md-7.offset-xl-1.text-center.text-md-start
+							h2 Weitere News
+							p Alle Neuigkeiten aus dem Klub
+						.col-md-4
+							.text-end
+								a(href="#").btn.btn-dark.text-start.d-none.d-md-inline-block
+									|Alle News
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-dark")
+						
+						include partials/news-section.pug
+			
+			section
+				.container
+					.row
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#assignment")
+								h6.text-center Dokumente & Downloads
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Aktuelle Corana-Regeln für den Trainingsbetrieb 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Hallenregeln Lorem ipsum
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Übersicht Mitglieder Beiträge
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#schedule")
+								h6.text-center Trainingszeiten
+								ul.mb-0.p-0
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Neu: Hockey Hallen-Trainingszeiten 
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Tennis Trainingszeiten
+
+									li
+										a(href="#").text-dark.text-decoration-none.d-flex
+											svg
+												use(xlink:href="images/sprite.svg#arrow-down-black")
+											span Lacrosse Trainingszeiten
+
+						.col-md-4.mb-4
+							.bg-grey.card.border-0.rounded-0.d-block.h-100
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner
+								.card-content
+									<strong>Thomas Quinders</strong> <br> Kuhweg 20 • 50735 Köln <br> Telefon: +49.221.9762210 <br> Telefax: +49.221.9762212 <br> E-Mail: <a href="mailto: buero@kkht.de" class="text-dark text-decoration-none border-bottom">buero(at)kkht.de</a>
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

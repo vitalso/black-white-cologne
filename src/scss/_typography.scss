@@ -1,0 +1,84 @@
+// Import fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,500&display=swap');
+
+h1 {
+  font-size: 52px;
+  line-height: 110%;
+  &.hero-title {
+    line-height: 1.29;
+    letter-spacing: 2.05px;
+    font-size: 82px;
+    font-weight: $font-black;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  letter-spacing: 1.05px;
+  font-weight: $font-extra-bold;
+}
+
+h3 {
+  font-size: 28px;
+  letter-spacing: 1.05px;
+  font-weight: $font-extra-bold;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: $font-extra-bold;
+  line-height: 1.31;
+  letter-spacing: 0.98px;
+}
+
+h5 {
+  font-size: 24px;
+  letter-spacing: .9px;
+  font-weight: $font-semibold;
+}
+
+h6 {
+  font-size: 22px;
+  letter-spacing: 0.83px;
+}
+
+p {
+  font-size: 22px;
+  letter-spacing: 0.83px;
+}
+
+// Media query for mobile fonts
+@media screen and (max-width: $tablet) {
+
+  h1 {
+    font-size: 32px;
+    &.hero-title {
+      margin-bottom: 50px;
+      font-size: 42px;
+      line-height: 1.36;
+      letter-spacing: 1.15px;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+    letter-spacing: 0.65px;
+  }
+
+  h4 {
+    font-size: 20px;
+    letter-spacing: .75px;
+  }
+
+  h5 {
+    font-size: 18px;
+    letter-spacing: .68px;
+  }
+  
+  p {
+    font-size: 18px;
+    letter-spacing: 0.68;
+  }
+
+}

@@ -1,0 +1,120 @@
+.btn {
+    font-size: 14px;
+    min-width: 200px;
+    position: relative;
+    font-weight: $font-bold;
+    padding: 13px 60px 13px 23px;
+    border-radius: 25px;
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+    &.btn-sm {
+        padding: 9px 22px 9px 19px;
+        border-radius: 25px;
+        font-size: 14px;
+        letter-spacing: 0.73px;
+        svg {
+            width: 39px;
+            height: 39px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: none;
+        }
+    }
+    &.btn-lg {
+        font-size: 16px;
+        letter-spacing: 0.83px;
+        padding: 21px 70px 21px 23px;
+        border-radius: 34px;
+        svg {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: none;
+        }
+    }
+}
+
+.btn-light {
+    background: $white;
+    border-color: $white;
+    svg {
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background: $dark;
+        color: $white;
+        border-color: $dark;
+    }
+}
+
+.btn-dark {
+    background: $dark;
+    border-color: $dark;
+    svg {
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background: $white;
+        color: $dark;
+        border-color: $dark;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .btn {
+        &.btn-lg {
+            text-align: left;
+            font-size: 14px;
+            min-width: 200px;
+            border-radius: 25px;
+            padding: 12px 26px 12px 23px;
+            svg {
+                width: 40px;
+                height: 40px;
+                right: 3px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    .btn {
+        &.btn-sm {
+            min-width: 155px;
+            padding: 6px 17px;
+            font-size: 12px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .btn-recovery {
+        &.btn-light {
+            background: $dark;
+            color: $white;
+            &:hover {
+                background: $white;
+                color: $dark;
+            }
+        }
+    }
+    
+}

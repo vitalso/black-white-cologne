@@ -1,0 +1,38 @@
+footer.bg-dark.text-white.position-relative.overflow-hidden
+	.container
+		.row
+			.col-xl-10.offset-xl-1
+
+				.row
+					.col-md-6
+						h5 Newsletter abonnieren
+						p Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit. Aenean commodo.
+
+						form(action="#").mt-4
+							.form-row.d-flex.justify-content-between.flex-column.flex-lg-row
+								input(type="email" name="email" placeholder="E-Mailadresse eingeben").bg-dark.border-bottom
+								button(type="submit").btn.btn-light.text-start.mt-3.mt-lg-0
+									|Jetzt anmelden
+									svg
+										use(xlink:href="images/sprite.svg#arrow-right-black")
+
+					.col-md-4.offset-md-2.mt-5.mt-md-0
+						h5 Kontakt & Adresse
+						p.mb-0 Kuhweg 2o, 50735 Köln
+						a(href="#").btn.btn-light.btn-recovery.text-start.mt-3.mt-md-5
+							|Mitglied werden
+							svg.d-none.d-md-block
+								use(xlink:href="images/sprite.svg#arrow-right-black")
+							svg.d-block.d-md-none
+								use(xlink:href="images/sprite.svg#arrow-right-dark")
+
+				hr.d-none.d-md-block
+
+				.text-center
+					.logo.position-relative.top-0.start-0.d-none.d-md-block
+						a(href="index.html"): img(src="images/logo.png", alt="logo")
+					
+					.footer-links
+						a(href="#").text-decoration-none Kontakt
+						a(href="#").text-decoration-none Impressum
+						a(href="#").text-decoration-none Datenschutz

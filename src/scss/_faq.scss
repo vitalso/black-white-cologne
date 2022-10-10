@@ -1,0 +1,99 @@
+// FAQ
+.accordion-flush {
+    .accordion-item {
+        border-color: $accordion-border;
+        &:last-child {
+            border-bottom: 1px solid $accordion-border;
+        }
+        .accordion-button {
+            font-size: 20px;
+            font-weight: $font-normal;
+            padding: 38px 0;
+            color: $dark;
+            box-shadow: none;
+            background: $white;
+            line-height: 1.6;
+            &:focus {
+                box-shadow: none;
+                background: $white;
+                color: $dark;
+            }
+            &:after {
+                width: 31px;
+                height: 31px;
+                margin-right: 22px;
+                background: url(../images/arrow-down-black.svg) no-repeat;
+            }
+        }
+        &.small-item {
+            .accordion-button {
+                font-size: 18px;
+                padding-top: 23px;
+                padding-bottom: 23px;
+                &:after {
+                    width: 14px;
+                    height: 19px;
+                    background-size: 100%;
+                    border-bottom: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+// Responsive style
+@media screen and (max-width: $mobile) {
+
+    .accordion-flush {
+        .accordion-item {
+            .accordion-button {
+                font-size: 14px;
+                padding: 18px 0;
+                line-height: 22px;
+                letter-spacing: .77px;
+                &:after {
+                    margin-left: 60px;
+                    width: 17px;
+                    height: 17px;
+                    background-size: 100%;
+                }
+            }
+            .accordion-body {
+                line-height: 22px;
+                letter-spacing: .77px;
+            }
+            &.small-item {
+                .accordion-button {
+                    padding-left: 0;
+                    padding-right: 0;
+                    &:after {
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $small) {
+
+    .accordion-flush {
+        margin: 0 -30px;
+        .accordion-item {
+            .accordion-button {
+                padding-left: 28px;
+                &:after {
+                    margin-left: 20px;
+                    margin-right: 30px;
+                }
+            }
+            .accordion-body {
+                padding-left: 28px !important;
+                padding-right: 28px !important;
+            }
+        }
+    }
+
+}

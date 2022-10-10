@@ -1,0 +1,131 @@
+// Table
+.table-data {
+    margin-top: 40px;
+    .table-header {
+        font-weight: $font-bold;
+        letter-spacing: 0.83px;
+        .table-col {
+            font-size: 16px;
+            border-right: 1px solid $white;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    .table-content {
+        .table-col {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    .table-row {
+        border-color: $dark !important;
+    }
+    .table-col {
+        padding: 34px 17px 34px 90px;
+        font-size: 20px;
+        strong {
+            font-weight: $font-semibold;
+            span {
+                margin-top: 11px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $dark;
+            border-bottom: 1px solid $dark;
+            &:hover {
+                border-bottom: none;
+            }
+        }
+        svg {
+            width: 55px;
+            height: 24px;
+            fill: $dark;
+            margin-right: 20px;;
+        }
+    }
+
+    & + .pattern-image {
+        max-width: 90%;
+    }
+
+    &.extend-table {
+        .table-col {
+            padding-left: 60px;
+        }
+    }
+}
+
+// Responsive style
+@media screen and (max-width: $laptop) {
+
+    .table-data {
+        .table-col {
+            padding-left: 50px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: $laptop-small) {
+
+    .table-data {
+        .table-col {
+            padding-left: 20px;
+            svg {
+                &.opacity {
+                    display: none;
+                }
+            }
+        }
+        &.extend-table {
+            .table-col {
+                padding-left: 20px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $mobile) {
+
+    .table-data {
+        margin-top: 0;
+        .table-content {
+            .table-col {
+                padding: 17px 36px;
+                &:last-child {
+                    padding-top: 0;
+                }
+            }
+        }
+        .table-row {
+            margin-bottom: 14px;
+            border-bottom: none;
+            flex-direction: column;
+            background: $dark;
+            color: $white;
+            .table-col {
+                &.w-50 , &.w-33 {
+                    width: 100% !important;
+                }
+                a {
+                    border-color: $white;
+                    color: $white;
+                }
+                svg {
+                    width: 42px;
+                    margin-right: 10px;
+                    fill: $white;
+                }
+                &.w-33 {
+                    &:nth-child(2) {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}

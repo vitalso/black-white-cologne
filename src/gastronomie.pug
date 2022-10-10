@@ -1,0 +1,125 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'news';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.with-overlay
+					img(src="images/gastronom-hero.png", alt="hero-slide")
+					.container
+						.row
+							.col-xl-6.offset-xl-3.text-center
+								h1.hero-title.text-white Gastronomie
+
+			section.pb-5.pb-sm-0
+				.container
+					.row.align-items-center.mb-5.pb-lg-5.pb-0
+						.col-xl-11.offset-xl-1.text-center.text-md-start
+							h2 Marcus et Cornelia in horto 
+							p Marcus et Cornlia in horto ambulant. Subito <br> Cornelia clamat: Serpens in horto!
+							
+					.row.py-3.py-lg-5.align-items-center
+						.col-lg-6.col-md-10.offset-md-1
+							.news-detail-slider.mt-0
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+
+						.col-lg-4.offset-xl-1
+							.news-detail
+								h4 Lorem ipsum dolor sit amet
+								p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+								ul
+									li große Sonnenterasse
+									li Plätze für Veranstaltungen bis 200 Personen
+									li herzhafte Küche, Catering & Buffets
+
+					.row.py-5
+						.col-lg-4.col-md-6.mb-4.mb-lg-0
+							.bg-grey.card.border-0.rounded-0.d-block.h-100.py-5
+								h6.text-center Adresse & Kontakt
+								.card-content.mt-4
+									p.mb-2: b Georgs Klubhaus
+									p.mb-2 Kuhweg 20 <br> 50735 Köln
+									p.mb-2 +49 221 12346798
+									p.mb-0: a(href="mailto: hallo@gastro-schwarz-weiß.de").text-dark hallo@gastro-schwarz-weiß.de
+
+						.col-lg-4.col-md-6.mb-4.mb-lg-0
+							.bg-grey.card.border-0.rounded-0.d-block.h-100.py-5
+								h6.text-center Öffnungszeiten
+								.card-content.mt-4
+									p.mb-2: b Montag – Sonntag:
+									p.mb-2 12:00 Uhr – 21:00 Uhr <br> (und nach Vereinbarung)
+									p.mb-2: b Küchenzeiten:
+									p.mb-0 Täglich Montag – Sonntag:ab 12:00 Uhr
+
+						.col-lg-4.col-md-6.mb-4.mb-lg-0
+							.bg-grey.card.border-0.rounded-0.d-block.h-100.py-5
+								h6.text-center Speisen & Getränke
+								.card-content.mt-4
+									p.mb-2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+									p.mb-0: a(href="#").text-dark Aktuelle Getränke- & Speisekarte
+
+					.row.py-5.align-items-center.flex-lg-row-reverse
+						.col-lg-6.offset-md-1.col-md-10.offset-md-1
+							.news-detail-slider.mt-0
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+								div: img(src="images/gastronom-slider.png", alt="gastronom-slider")
+
+						.col-xl-4.offset-xl-1
+							.news-detail
+								h4 Lorem ipsum dolor sit amet
+								p Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+								ul
+									li große Sonnenterasse
+									li Plätze für Veranstaltungen bis 200 Personen
+									li herzhafte Küche, Catering & Buffets
+
+					.row.mb-5.py-5
+						.col-xl-10.offset-xl-1.text-center.text-md-start
+							h2 Für alle was dabei
+							p Angebote für die ganze Familie bei Schwarz-Weiß Köln
+						
+						.col-md-6.mt-4.position-relative
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/for-kids.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Schwarz Weiß
+									h2: a(href="#").text-decoration-none.text-white Angebote für Kinder
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+							.pattern-image.overflow-hidden.medium-pattern: img(src="images/pattern.svg", alt="pattern-image")
+
+						.col-md-6.mt-4
+							.propose-item.news-item.with-overlay.overflow-hidden.mw-100
+								img(src="images/training.png", alt="image")
+								.news-item-desc
+									i.text-white.text-uppercase Athletik
+									h2: a(href="#").text-decoration-none.text-white Trainingsgelände
+									p.text-white Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+									a(href="#").btn.btn-light.btn-lg.text-start
+										|Mehr erfahren
+										svg
+											use(xlink:href="images/sprite.svg#arrow-right-black")
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug

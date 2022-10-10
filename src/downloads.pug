@@ -1,0 +1,146 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		- var name_page = 'club';
+
+		// Header start
+		include partials/header.pug
+
+		// Main page start
+		main
+
+			// Hero section
+			section.hero-section.inner-hero.p-0
+				.hero-slide.without-image
+					.container
+						.row.justify-content-end
+							.col-xl-6.offset-xl-3.text-center.justify-content-end.pb-0
+								h1.hero-title.mb-3 Downloads
+
+			section.pb-5.pb-sm-0
+				.container
+					.row
+						.col-11.offset-xl-1
+							h4 Allgemeine Downloads
+						
+						.col-xl-5.offset-xl-1.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Mitgliedsbeiträge 2022
+								
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Satzungsordnung
+
+						.col-xl-5.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+					.row.mt-5
+						.col-11.offset-xl-1
+							h4 Tennis
+						
+						.col-xl-5.offset-xl-1.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+						.col-xl-5.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+					.row.mt-5
+						.col-11.offset-xl-1
+							h4 Hockey
+						
+						.col-xl-5.offset-xl-1.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+						.col-xl-5.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+					.row.mt-5
+						.col-11.offset-xl-1
+							h4 Lacrosse
+						
+						.col-xl-5.offset-xl-1.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+						.col-xl-5.col-md-6
+							.accordion.accordion-flush.mx-0
+								.accordion-item.small-item.px-0
+									h2.accordion-header
+										a(href="#").accordion-button.collapsed.text-decoration-none Download Dokumenten Titel
+
+					.row.my-5.py-0.py-sm-5.wide-element
+						.col-xl-5.offset-xl-1.px-0.col-md-6
+							img(src="images/downloads-image.png", alt="image").w-100
+
+						.col-xl-5.px-4.px-sm-0.col-md-6.mt-4.mt-sm-0
+							.bg-grey.card.border-0.rounded-0.d-block.h-100.pb-3
+								.card-icon.text-center
+									svg
+										use(xlink:href="images/sprite.svg#question")
+								h6.text-center Ansprechpartner <br> Geschäftsstelle
+								.offset-md-1.mt-3.mt-lg-5
+									p.fs-15.mb-2: b Sabine Muster-Dokument
+									p.fs-15.mb-2.d-block.d-md-none Kuhweg 20 • 50735 Köln
+									p.fs-15.mb-2 +49 221 12346798
+									p.fs-15.mb-2: a(href="mailto: hallo@schwarz-weiß.koeln").text-dark hallo@schwarz-weiß.koeln
+
+			
+		// Footer
+		include partials/footer.pug
+		
+		// Script
+		include partials/scripts.pug
